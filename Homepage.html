@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HomePage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .logo {
+            float: left;
+            margin-right: 20px;
+        }
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+
+        .MainContainer {
+            display:grid;
+        }
+        .Container1 {
+            flex: 1;
+            max-width: 1000px;
+            margin-right: 20px;
+            padding: 0px;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .Links {
+            text-align: left;
+            text-indent: 300px;
+            margin-bottom: 40px;
+            margin-top: 30px;
+        }
+
+        .Links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            margin-left: 20px;
+
+        }
+
+        .Links a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 50px;
+            color: white;
+            text-indent: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 25px pink, 0 0 10px orange;
+        }     
+#firsttable {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom:0%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+}
+
+th {
+    color: #895e07;
+    text-align: center;
+        background-image: linear-gradient(90deg,  #b14b1443, #fcfba8c3); }
+#Firsttable td {
+    color: #a95117;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}     
+        .h5,h3,h2 {
+            text-align:left;
+            margin-left: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         color:rgb(151, 62, 13);
+         }
+        p {
+            text-align:left;
+            margin-left: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         color:rgb(225, 32, 32);
+        }   
+        p1{
+            text-align:left;
+            margin-left: 10px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            color:#a95117
+        }
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .resources {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    width: 13%;
+    height: 37%;
+    transform: translateY(-40%);
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.resources h2 {
+    color: #822c2c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.resources li {
+    margin-bottom: 10px;
+}
+
+.resources a {
+    text-decoration: none;
+    color: #713b3b;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body> 
+    <div class="logo"> 
+        <img src="logo.jpeg" class="L">
+    </div> 
+
+    <div class="Links">
+        <a href="Word Counter.html">Word Counter</a> 
+        <a href="text-to-speech converter.html">Text-To-Speech Converter</a>
+    </div> 
+
+    <div class="MainContainer">
+        <div class="Container1">
+            <h1>Welcome Everyone To Smart Tools</h1>
+
+            <h2>Here we provide  Useful Tools for you like:</h2> 
+            <h3>text-to-speech (TTS) technology: </h3>
+             <p>TTS converts written text into spoken words and audio files ,
+                It enhances accessibility, writing, editing, and focus by providing an 
+                auditory representation of text. </p> 
+                <h3>  word counter tool </h3>
+                   <p> calculates the total number of words in a given text. It’s commonly used for 
+                     writing, editing, and tracking word limits in  contexts such as essays,
+                    and articles </p> 
+                    <P1>we have build them using HTML, CSS,JS 
+                        and here are some facts you may know about each of them :
+                    </P1>
+                
+            <table id="Firsttable">
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JS</th>
+                </tr>
+                <tr>
+                    <td>
+                        Berners-Lee is a 
+                        computer scientist who worked at
+                         (CERN) when he designed HTML in 1993.
+                    </td>
+                    <td>
+                        CSS was first intended in 1994 by Håkon Wium Lie
+                         on 10 October 1994.
+                    </td>
+                    <td> 
+                        In 1995, Netscape asked developer Brendan Eich to
+                         create a scripting language for its web browser. He did it in just 10 days!     
+                    </td>
+                </tr>
+                <tr>
+                    <td>HTML doesn’t involve algorithms
+                     in the traditional sense because it doesn’t 
+                     perform computations or logic like programming 
+                     languages do.</td>  
+                     <td>
+                        CSS frameworks are pre-prepared 
+                        libraries that are meant to allow for easier
+                         standards-compliant styling of web pages
+                     </td>
+                     <td>
+                        JavaScript has been around longer than Google. Google wasn’t founded until 1998 –
+                         three years after Javascript was made  . 
+                     </td>
+                    </tr>
+            </table>
+            <form action="form.html" method="post">
+                <button class="btn" type="submit">Feedback Form</button>
+            </form>
+        </div>
+
+        <div class="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/build-a-text-to-speech-converter-using-html-css-javascript/">geeksforgeeks</a></li>
+                <li><a href="https://www.codingnepalweb.com/text-to-speech-converter-html-javascript/">codingnepal</a></li>
+                <li><a href="https://dev.to/devsmitra/convert-text-to-speech-in-javascript-using-speech-synthesis-api-223g">Dev community </a></li>
+                <li><a href="https://www.w3schools.com/js/js_events.asp">w3schools </a></li>
+            </ul>  
+        </div>
+    </div>
+
+</body>
+</html>

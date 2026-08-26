@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Text-To-Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>		
+<body>  
+<div> 
+	<a href="Homepage.html"> 
+		<img src="home.jpeg" class="img">  </a>   	<a href="Word Counter.html"> <img src="k.jpeg" class="img">  </a>    
+</div>
+    <div class="container">
+		<div class="app-container">
+			<div class="headings-container">
+				<h1>
+					Text to Speech Converter Using 
+					HTML, CSS, and JavaScript.
+				</h1>
+				<h3>
+					Enter any text of your choice
+					and change it into speech just by
+					a click to the button.
+				</h3>
+			</div>
+			<div class="interaction-container">
+				<textarea id="textToConvert"
+						placeholder="Enter text to convert into speech..."
+						 cols="35"
+						rows="10" class="text-control">
+				</textarea>
+				<p class="error-para"></p>
+				<button class="btn" id="convertBtn">
+				Play Converted Sound</button>
+                <br> 
+                <select  style ="color:rgba(223, 220, 220, 0.57);" name="languages" id="la"></select>
+
+			</div> 
+		</div>
+	</div>
+	
+    
+    <script src="script.js"></script>
+</body>
+</html>

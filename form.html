@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feedback Form</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  .form-container {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  input[type="text"], 
+  select, 
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: lightpink;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: lightblue;
+  }
+  .rating-container {
+    display: flex;
+    align-items: center;
+  }
+  .rating-container label {
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="form-container">
+    <h3>We'd Love to Hear Your Feedback!</h3>
+    <form action="lastpage.html">
+      <label for="fname">Your Name</label>
+      <input  type="text" id="fname" name="firstname" placeholder="Enter Your Name"> <br>
+      <fieldset>
+        <legend>Would you recommend our website to a friend?</legend>
+        <input type="checkbox" id="recommend-yes" name="recommend" value="Yes">
+        <label for="recommend-yes">Yes</label>
+        <input type="checkbox" id="recommend-no" name="recommend" value="No">
+        <label for="recommend-no">No</label>
+        <input type="checkbox" id="recommend-maybe" name="recommend" value="Maybe">
+        <label for="recommend-maybe">Maybe</label>
+      </fieldset> <br>
+
+     <label for="useful">Did you find the website helpful?</label><br>
+      <input type="radio" id="yes" name="useful" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="useful" value="no">
+      <label for="no">No</label>
+    <br>
+<label for="Iname">Rate our website:</label><br>
+0<input type="range" name="points" min="0" max="10" />10<br>
+    <br>
+
+      <label for="comments">Comments:</label>
+      <textarea name="comments" rows="4" cols="50" placeholder="Your Comments.."></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
