@@ -1,5 +1,3 @@
-Project Description:
-
 Smart Tools is a simple web platform that offers helpful tools for everyday digital tasks. It includes two main tools:
 1. Word Counter
 A tool that instantly counts the number of words in any text entered by the user — useful for writing, editing, and tracking text/word limits.
